@@ -8,7 +8,7 @@ var input=document.getElementById("usrinp");
 var ul = document.querySelector("ul");
 
 function inputlength(){
-    return input.value.lenght;
+    return input.value.length;
 }  
 
 
@@ -24,7 +24,7 @@ function addlistafterlclick(){
         createListElement();
     }
 }
-function addlistafterkeypress(){
+function addlistafterkeypress(event){
     if ( inputlength() > 0 && event.keyCode === 13 ){
         createListElement();
     }
